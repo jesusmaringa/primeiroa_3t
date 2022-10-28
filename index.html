@@ -1,21 +1,34 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>antonio gabriel</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>antonio gabriel</title>
   <script src="estudo.js"></script>
-  
+  <link rel="stylesheet" href="geral.css">
 </head>
-<body>
 
-  Capital: <input id="valor" type="text"><br>
-  Juros(mensais): <input id="juros" type="text"><br>
+<body> 
+  <div class="calculadora">
+    <div id="sptotal">
+      <span id="total">Total: 0,00</span>
+    </div>   
+    Capital: <input id="valor" type="text"><br>
+    Juros(mensais): <input id="juros" type="text"><br>
+    Nr de Meses: <input id="meses" type="text"><br>
+    <button onclick="calcula()">Enviar</button>
+    <div id="spListaMeses">
+      <span id="listaMeses"></span>
+    </div>
+  </div>
 
-  Nr de Meses: <input id="meses" type="text"><br>
-  
-  <button onclick="calcula()">Enviar</button>
+
+
+
+
+
 
   <br><br><br><br>
   Valor 1: <input id="v1" type="text"><br>
@@ -31,4 +44,5 @@
 
 
 </body>
+
 </html>
